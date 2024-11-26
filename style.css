@@ -1,5 +1,242 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Spartan:wght@400;500;600;700&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    font-family: "Urbanist",sans-serif;
+    line-height: 1.5;
+    font-weight: bold;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    
+    --buttonColor:#2a2c30;
+    --secondaryColor:hsl(34,94%,87%) ;
+    --borderColor:rgb(19, 148, 180) ;
+    --borderColorSecondary:hsl(113,15%,90%) ;
+    --backgroundColor:#f7f7f7 ;
+    --backgroundSecondary:hsl(0,0%,93%) ;
+    --textColor:hsl(154,13%,32%) ;
+    --titleColor:hsl(0,0%,13%);
+    --main-color:hsl(176,88%,27%) ;
+    --supporting-color:hsl(129,44%,94%) ;
+    --glow-color:hsl(60,1%,56%) ;
+}
+
+html{
+    font-size: 62.5%;
+    color:var(--textColor);
+}
+
+/*=============== Body styling ===============*/
+
+body{
+    margin:0 auto;
+    padding:0 auto;
+    min-width: 320px;
+    background-color: var(--backgroundColor);
+}
+
+h1,h2,h3,h4,h5,h6{
+    line-height: 1.1;
+    color:var(--titleColor);
+}
+
+h1{
+    font-size: 3.2rem;
+}
+
+p,li,a,label{
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    color:var(--textColor) ;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: #676cff;
+    text-decoration: none;
+    &:hover{
+        color:#535bf2
+    }
+}
+
+::placeholder{
+    font-family: 'Urbanist',sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.form-input{
+    width: 100%;
+    border: 1px solid var(--borderColor);
+    padding-inline:1rem;
+    height: 30px;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+/***** Layout *****/ 
+.container{
+    max-width:142rem;
+    margin:0 auto;
+    padding: 9.6rem 2.4rem;
+}
+
+/***** End Layout *****/
+
+/***** Navbar Section *****/
+.top_txt{
+    background-color: var(--supporting-color);
+    color: var(--textColor);
+    border-bottom: 1px solid var(--borderColor);
+
+    & p,a{
+        font-size: 1.2rem;
+        color: var(--textColor);
+        font-weight: 500;
+    }
+
+    & a:hover{
+        color:#676cff;
+    }
+}
+
+.section-navbar{
+    width: 100%;
+}
+
+.section-navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.5rem 10rem;
+}
+#shopIcon{
+    display: flex;
+    align-items:end;
+    
+    & i{
+        font-size: 30px;
+        color:black;
+    }
+
+   & p{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+   }
+
+   & i:hover{
+    color: var(--main-color);
+   }
+  
+}
+
+
+.navbar-brand{
+    padding:0 6rem;
+    display: flex; 
+    align-items: center;
+    gap: 5rem;
+}
+
+.section-navbar .navbar ul{
+    display: flex;
+    gap:3.2rem;
+    text-transform: capitalize;
+    align-items: center;
+    & li a{
+        color: #2a2c30;
+        font-weight: 700;
+        text-transform:uppercase ;
+        font-size: 1.1rem;
+        font-family: 'Spartan';
+        display: inline-block;
+        position: relative;
+       
+        &:after{
+            content: "";
+            position: absolute;
+            bottom: -0.1rem;
+            left:0;
+            width:0%;
+            border-bottom: 0.1rem solid var(--main-color);
+            transition: all 0.3s linear;
+            -webkit-transition: all 0.3s linear;
+            -moz-transition: all 0.3s linear;
+            -ms-transition: all 0.3s linear;
+            -o-transition: all 0.3s linear;
+    }
+    }
+    & li a:hover{
+        color: var(--main-color);
+    }
+    & li a:hover::after{
+        width: 100%;
+    }
+    & #active-link{
+        color: var(--main-color);
+    }
+   
+}
+.right-section{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+}
+.header-search{
+    width:340px;
+    display: flex;
+}
+.search-btn{
+    position: relative;
+    cursor:pointer;
+}
+.header-action-btn{
+    position: relative;
+    
+}
+
+.header-action-btn img{
+    width: 25px;
+    
+}
+
+.header-action-btn .count{
+    position: absolute;
+    top:-1.5rem;
+    right:-1rem;
+    background-color: var(--main-color);
+    color: var(--backgroundColor);
+    width: 20px;
+    height: 20xp;
+    line-height: 18px;
+    text-align: center;
+    border-radius:50% ;
+    font-size: 12px;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+}
+
+.user i{
+    font-size: 20px;
+}
+/***** End Navbar Section *****/
+
