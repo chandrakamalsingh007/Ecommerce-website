@@ -80,9 +80,9 @@ a{
 
 .form-input{
     width: 100%;
-    border: 1px solid var(--borderColor);
+    border: 1px solid var(--borderColorSecondary);
     padding-inline:1rem;
-    height: 30px;
+    height: 35px;
     border-radius: 0.5rem;
     -webkit-border-radius: 0.5rem;
     -moz-border-radius: 0.5rem;
@@ -104,6 +104,7 @@ a{
     background-color: var(--supporting-color);
     color: var(--textColor);
     border-bottom: 1px solid var(--borderColor);
+    padding: 0 15rem;
 
     & p,a{
         font-size: 1.2rem;
@@ -202,10 +203,20 @@ a{
 .header-search{
     width:340px;
     display: flex;
+    gap: 0.1rem;
 }
 .search-btn{
+    width: 35px;
+    height: 33px;
     position: relative;
     cursor:pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--main-color);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 .header-action-btn{
     position: relative;
@@ -213,7 +224,8 @@ a{
 }
 
 .header-action-btn img{
-    width: 25px;
+    width: 22px;
+    margin-top: 10px;
     
 }
 
@@ -237,6 +249,7 @@ a{
 
 .user i{
     font-size: 20px;
+    cursor: pointer;
 }
 /***** End Navbar Section *****/
 
