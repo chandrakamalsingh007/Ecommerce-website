@@ -347,6 +347,10 @@ main .section-hero {
     padding:2rem 18rem;
     font-size: 3rem;
 
+    & span{
+        color: var(--main-color);
+    }
+
 }
 
 .deals-section .container {
@@ -490,5 +494,25 @@ main .section-hero {
     }
 }
 /***** End Policy Section *****/
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
 

@@ -12,6 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="section-navbar">
@@ -94,7 +98,7 @@
 
     <!-- ========== Start Deals Section ========== -->
     <section class="deals-section">
-      <h2>Our Deals</h2>
+      <h2><span>Our</span> Deals</h2>
       <div class="deals-container container grid grid-two--cols">
         <div class="deals-item">
           <div class="deals-group">
@@ -178,8 +182,8 @@
     </section>
 
     <!-- ========== End Deals Section ========== -->
-     <!-- ========== Start Policy Section ========== -->
-     <section class="section-policy">
+    <!-- ========== Start Policy Section ========== -->
+    <section class="section-policy">
       <div class="container grid grid-four--cols">
         <div class="div-policy">
           <div class="icons">
@@ -196,7 +200,7 @@
           </div>
           <div class="div-policy-text">
             <p>Easy 12 Day Returns</p>
-            <p>Back Returns in 7 Days </p>
+            <p>Back Returns in 7 Days</p>
           </div>
         </div>
         <div class="div-policy">
@@ -218,8 +222,42 @@
           </div>
         </div>
       </div>
-     </section>
-     <!-- ========== End Policy Section ========== -->
-     
+    </section>
+    <!-- ========== End Policy Section ========== -->
+    <!-- ========== Start Categories Section ========== -->
+    <section class="categories container section">
+      <h3 class="section-title"><span>Popular</span>Categories</h3>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <!-- ========== Start category Template Section ========== -->
+    <template id="categoryTemplate">
+      <div class="cards swiper-slide">
+        <a href="shop.html" class="category-item">
+          <img src="" alt="" class="category-img" />
+          <h3 class="category-title"></h3>
+        </a>
+      </div>
+    </template>
+
+    <!-- ========== End category Template Section ========== -->
+
+    <!-- ========== End Categories Section ========== -->
+    <!--=========== Javascript integration ============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
