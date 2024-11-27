@@ -124,7 +124,7 @@ a{
 
 .btn:hover{
     background-color: transparent;
-    color:var(--main-color);
+    color:var(--main-color)
 }
 
 /***** Layout *****/ 
@@ -164,13 +164,14 @@ a{
     align-items: center;
     padding:1.5rem 10rem;
 }
-#shopIcon{
+/* #shopIcon{
     display: flex;
     align-items:end;
     
     & i{
         font-size: 30px;
         color:black;
+        display: flex;
     }
 
    & p{
@@ -178,11 +179,26 @@ a{
     font-weight: bold;
 
    }
-
-   & i:hover{
-    color: var(--main-color);
-   }
   
+}
+#shopIcon:hover{
+    color: var(--main-color);
+} */
+
+#shopIcon i{
+    font-size: 30px;
+    color:black;
+    display: flex;
+    align-items: end;
+    
+    & p{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+#shopIcon i:hover{
+   color: var(--main-color);
 }
 
 
