@@ -107,7 +107,9 @@ a {
 .grid-two--cols {
   grid-template-columns: repeat(2, 1fr);
 }
-
+.grid-four--cols{
+    grid-template-columns: repeat(4,1fr);
+}
 .btn {
   display: inline-block;
   background-color: var(--main-color);
@@ -344,6 +346,7 @@ main .section-hero {
 .deals-section h2{
     padding:2rem 18rem;
     font-size: 3rem;
+
 }
 
 .deals-section .container {
@@ -450,4 +453,42 @@ main .section-hero {
     line-height: 35px;
 }
 /*** End Deals Section *****/
+/***** Policy Section *****/ 
+.section-policy{
+    & .container{
+        margin:3.2rem 17rem;
+        padding:0;
+        border-radius: 0.5rem;
+        background-color: var(--backgroundSecondary);
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+}
+}
+
+.div-policy{
+    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-right: 0.1rem solid var(--backgroundColor);
+
+    & :last-child{
+        border-right: none;
+    }
+    & .icons{
+        font-size: 3.2rem;
+        color:var(--main-color)
+
+    }
+    & p{
+        font-size: 12px;
+    }
+    & p:last-child{
+        font-size: 10px;
+    }
+}
+/***** End Policy Section *****/
+
 
