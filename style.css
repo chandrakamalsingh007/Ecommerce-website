@@ -503,7 +503,6 @@ main .section-hero {
     padding: 1rem;
     display: flex;
     overflow-x: auto;
-    background-color: var(--backgroundSecondary);
     border-radius: 2rem;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
@@ -517,7 +516,7 @@ main .section-hero {
   & h3{
     padding: 0 2rem;
     font-size: 2.5rem;
-    line-height: 3;
+    line-height: 1.2;
 
     & span{
       color: var(--main-color);
@@ -528,9 +527,9 @@ main .section-hero {
 
 .category-item{
   margin: 10px;
-  width: 220px;
+  width: 180px;
   text-align: center;
-  border: 1px solid var(--borderColor);
+  border: 1px solid var(--borderColorSecondary);
   background-color: var(--backgroundColor);
   border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -540,7 +539,7 @@ main .section-hero {
 
   & img{
     margin-top: 2px;
-    width: 210px;
+    width: 170px;
     background-size: cover;
     background-position: center;
     border-radius:1rem ;
@@ -551,7 +550,7 @@ main .section-hero {
 }
   & h3{
     font-size: 1.6rem;
-    line-height: 1.8;
+    line-height: 1.5;
   }
 }
 
