@@ -16,7 +16,7 @@
   <body>
     <header class="section-navbar">
       <section class="top_txt">
-        <div class="head container">
+        <div class="head container ">
           <div class="head_txt">
             <p>Free Delivery, 12-days return or Refund guarantee.</p>
           </div>
@@ -67,8 +67,8 @@
 
     <!-- ========== Start Home Hero Section ========== -->
     <main>
-      <section class="section-hero">
-        <div class="container grid grid-two--cols">
+      <section class="section-hero container">
+        <div class="grid grid-two--cols">
           <div class="section-hero--content">
             <span class="hero-subheading"> Hot promotions </span>
             <h1 class="hero-heading">
@@ -93,9 +93,9 @@
     <!-- ========== End Home Hero Section ========== -->
 
     <!-- ========== Start Deals Section ========== -->
-    <section class="deals-section">
+    <section class="deals-section container">
       <h2><span>Our</span> Deals</h2>
-      <div class="deals-container container grid grid-two--cols">
+      <div class="deals-container grid grid-two--cols">
         <div class="deals-item">
           <div class="deals-group">
             <h3 class="deals-brand">Deal of the Day</h3>
@@ -179,8 +179,8 @@
 
     <!-- ========== End Deals Section ========== -->
     <!-- ========== Start Policy Section ========== -->
-    <section class="section-policy">
-      <div class="container grid grid-four--cols">
+    <section class="section-policy container">
+      <div class=" grid grid-four--cols">
         <div class="div-policy">
           <div class="icons">
             <i class="fa-solid fa-truck-fast"></i>
@@ -240,7 +240,69 @@
     <!-- ========== End Categories Section ========== -->
 
     <!-- ========== Start Product Section ========== -->
-    <section class="products-section container"></section>
+    <section class="products-section container">
+      <div class="tab-btns">
+        <span class="tab-btn active-tab">Featured</span>
+        <span class="tab-btn">Popular</span
+        ><span class="tab-btn">New added</span>
+      </div>
+
+      <div class="tab-items">
+        <div class="tab-item">
+        <div id="product-container " class="grid grid-four--cols">
+
+        </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Start product templete Section ========== -->
+    <template id="productItem">
+      <div class="product-item">
+        <div class="product-banner">
+          <a href="details.html" class="product-images">
+            <img src="" alt="" class="product-img default">
+            <img src="" alt="" class="product-img hover">
+          </a>
+          <div class="product-actions">
+            <a href="#" class="action-btn" aria-label="Quick View">
+              <i class="fa-light fa-eye"></i>
+            </a>
+            <a href="#" class="action-btn" aria-label="Add To Wishlist ">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+            <a href="#" class="action-btn" aria-label="Compare">
+              <i class="fa-regular fa-shuffle"></i>
+            </a>
+          </div>
+          <div class="product-badge light-pink"></div>
+        </div>
+        <div class="product-content">
+          <span class="product-category"></span>
+          <a href="details.html">
+            <h3 class="product-title"></h3>
+          </a>
+          <div class="product-rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="product-price flex">
+            <span class="new-price"></span>
+            <span class="old-price"></span>
+          </div>
+
+          <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </a>
+
+        </div>
+      </div>
+    </template>
+    
+    <!-- ========== End product templete Section ========== -->
+    
     <!-- ========== End Product Section ========== -->
 
     <!-- ========== Start new arrival Section ========== -->
@@ -250,21 +312,19 @@
     <!-- ========== Start showcase Section ========== -->
     <section class="showcase-section container"></section>
     <!-- ========== End showcase  ========== -->
-    
+
     <!-- ========== Start why-choose Section ========== -->
     <section class="why-choose-section container"></section>
     <!-- ========== End why-choose  ========== -->
-    
+
     <!-- ========== Start newsletter Section ========== -->
     <section class="newsletter-section container"></section>
     <!-- ========== End newsletter  ========== -->
-    
+
     <!-- ========== Start Footer Section ========== -->
-    <Footer></Footer>
+    <footer></footer>
     <!-- ========== End Footer Section ========== -->
-    
-    
-    
+
     <!--=========== Javascript integration ============-->
     <script type="module" src="main.js"></script>
   </body>
