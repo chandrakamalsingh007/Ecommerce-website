@@ -249,73 +249,32 @@
 
       <div class="tab-items">
         <div class="tab-item">
-        <div id="product-container " class="grid grid-four--cols">
-          <div class="product-item">
-            <div class="product-banner">
-              <a href="details.html" class="product-images">
-                <img src="src/assets/images/product-1-1.jpg" alt="" class="product-img default">
-                <img src="src/assets/images/product-1-1.jpg" alt="" class="product-img hover">
-              </a>
-              <div class="product-actions">
-                <a href="#" class="action-btn" aria-label="Quick View">
-                  <i class="fa-regular fa-eye"></i>
-                </a>
-                <a href="#" class="action-btn" aria-label="Add To Wishlist ">
-                  <i class="fa-regular fa-heart"></i>
-                </a>
-                <a href="#" class="action-btn" aria-label="Compare">
-                  <i class="fa-solid fa-shuffle"></i>
-                </a>
-              </div>
-              <div class="product-badge light-pink">HOT</div>
-            </div>
-            <div class="product-content">
-              <span class="product-category">Clothing</span>
-              <a href="details.html">
-                <h3 class="product-title">Colorful pattern shirt</h3>
-              </a>
-              <div class="product-rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <div class="product-price flex">
-                <span class="new-price">Rs.2450</span>
-                <span class="old-price">Rs.2700</span>
-              </div>
-    
-              <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
-                <i class="fa-solid fa-bag-shopping"></i>
-              </a>
-    
-            </div>
-          </div>
+        <div id="productContainer" class="grid grid-four--cols">
+          
         </div>
         </div>
       </div>
     </section>
     <!-- ========== Start product templete Section ========== -->
-    <template id="productItem">
+    <template id="productTemplate">
       <div class="product-item">
         <div class="product-banner">
           <a href="details.html" class="product-images">
-            <img src="" alt="" class="product-img default">
-            <img src="" alt="" class="product-img hover">
+            <img src="" alt="" class="product-img-front default">
+            <img src="" alt="" class="product-img-back hover">
           </a>
           <div class="product-actions">
             <a href="#" class="action-btn" aria-label="Quick View">
-              <i class="fa-light fa-eye"></i>
+              <i class="fa-regular fa-eye"></i>
             </a>
             <a href="#" class="action-btn" aria-label="Add To Wishlist ">
               <i class="fa-regular fa-heart"></i>
             </a>
             <a href="#" class="action-btn" aria-label="Compare">
-              <i class="fa-regular fa-shuffle"></i>
+              <i class="fa-solid fa-shuffle"></i>
             </a>
           </div>
-          <div class="product-badge light-pink"></div>
+          <div id="" class="product-badge"></div>
         </div>
         <div class="product-content">
           <span class="product-category"></span>
@@ -334,8 +293,22 @@
             <span class="old-price"></span>
           </div>
 
+          <div class="product-stock flex">
+            <p>Total Stocks Available:</p>
+            <span class="total-stock"></span>
+          </div>
+
+          <div class="product-quantity">
+            <p class="productProperty">Quantity(Pieces):</p>
+            <div class="stockElement">
+              <button class="cartIncrement">+</button>
+              <p class="total-quantity">1</p>
+              <button class="cartDecrement">-</button>
+            </div>
+          </div>
+
           <a href="#" class="action-btn cart-btn" aria-label="Add To Cart">
-            <i class="fa-solid fa-bag-shopping"></i>
+            <i class="fa-solid fa-bag-shopping"></i>Add To cart
           </a>
 
         </div>

@@ -1,15 +1,13 @@
-const categoryContainer = document.getElementById('categoryContainer');
-const categoryTemplate = document.getElementById('categoryTemplate');
+const categoryContainer = document.getElementById("categoryContainer");
+const categoryTemplate = document.getElementById("categoryTemplate");
 
-export const showCategoryContainer = (categories) =>{
-    if(!categories){
-        return false;
-    }
+export const showCategoryContainer = (categories) => {
+  if (!categories) {
+    return false;
+  }
 
-  categories.forEach((curCate)=>{
-
-    const{id,category,image}= curCate;
-    console.log(category);
+  categories.forEach((curCate) => {
+    const { id, category, image } = curCate;
 
     const categoryClone = document.importNode(categoryTemplate.content, true);
 
