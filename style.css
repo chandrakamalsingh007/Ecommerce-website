@@ -660,6 +660,16 @@ main .section-hero {
   left:0;
 }
 
+.product-item:hover .product-img-back{
+  margin-top: 10px;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  vertical-align: center;
+}
+
 .product-actions{
   position:absolute;
   top:50%;
@@ -843,8 +853,18 @@ main .section-hero {
 .product-img-back.hover,
 .product-actions,
 .action-btn::after,
-.action-btn::before{
+.action-btn::before,
+.product-item:hover .product-img-front{
   opacity:0;
 }
+
+.product-item:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.product-item:hover .product-img-back.hover{
+  opacity:1;
+}
+
 /***** End Products Section *****/
 
