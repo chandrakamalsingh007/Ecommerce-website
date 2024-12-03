@@ -6,7 +6,7 @@ import products from "./src/api/products.json";
 import { showProductContainer } from './ProductCard';
 
 showCategoryContainer(categories);
-console.log(products);
+
 
 document.addEventListener('DOMContentLoaded',()=>{
     showProductContainer(products);

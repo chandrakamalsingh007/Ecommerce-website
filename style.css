@@ -889,7 +889,9 @@ main .section-hero {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.product-item:hover .product-img-back.hover,
+.product-item:hover .product-img-back.hover{
+  opacity: 0.5;
+}
 .product-item:hover .product-actions,
 .action-btn::before,
 .action-btn::after{
