@@ -611,9 +611,9 @@ main .section-hero {
   background-color: var(--secondaryColor);
   
 }
-/* .tab-item:not(.active-tab){
+.tab-item:not(.active-tab){
   display: none;
-} */
+}
 
 .product-item{
   cursor: pointer;
@@ -627,12 +627,13 @@ main .section-hero {
   -moz-border-radius: 1.5rem;
   -ms-border-radius: 1.5rem;
   -o-border-radius: 1.5rem;
-  transition: all 0.2s var(--transition);
-  -webkit-transition: all 0.2s var(--transition);
-  -moz-transition: all 0.2s var(--transition);
-  -ms-transition: all 0.2s var(--transition);
-  -o-transition: all 0.2s var(--transition);
-  & img{
+  transition: all 1s var(--transition);
+  -webkit-transition: all 1s var(--transition);
+  -moz-transition: all 1s var(--transition);
+  -ms-transition: all 1s var(--transition);
+  -o-transition: all 1s var(--transition);
+  & img
+{
   
     margin-top: 2px;
     width: 200px;
