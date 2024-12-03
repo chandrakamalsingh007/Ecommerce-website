@@ -578,13 +578,6 @@ main .section-hero {
 /***** End Categories Section *****/
 
 /***** Products Section *****/ 
-#productContainer{
-  max-height: 880px;
-  overflow-y: auto;
-   &::-webkit-scrollbar{
-    width: 0;
-   }
-}
 
 .tab-btns{
   display: flex;
@@ -899,4 +892,28 @@ main .section-hero {
 }
 
 /***** End Products Section *****/
+
+
+/***** Newsletter Section *****/ 
+.newsletter-section{
+  background-color: hsl(166,23%,74%);
+  
+}
+
+
+.newsletter-container{
+  padding: 2rem;
+  grid-template-columns: repeat(2,3.5fr) 5fr;
+  align-items: center;
+  column-gap: 3rem;
+}
+.newsletter-title{
+  font-size: 1.5rem;
+}
+.newsletter-icon{
+  width: 40px;
+}
+
+/***** End Newsletter Section *****/
+
 

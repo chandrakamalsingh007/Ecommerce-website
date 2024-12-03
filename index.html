@@ -243,12 +243,12 @@
     <section class="products-section container">
       <div class="tab-btns">
         <span class="tab-btn active-tab" data-target="#featured">Featured</span>
-        <span class="tab-btn">Popular</span
-        ><span class="tab-btn">New added</span>
+        <span class="tab-btn" data-target="#popular">Popular</span
+        ><span class="tab-btn" data-target="#new-added">New added</span>
       </div>
 
       <div class="tab-items">
-        <div class="tab-item active-tab">
+        <div class="tab-item active-tab" content id="featured">
         <div id="productContainer" class="grid grid-four--cols">
           
         </div>
@@ -332,7 +332,23 @@
     <!-- ========== End why-choose  ========== -->
 
     <!-- ========== Start newsletter Section ========== -->
-    <section class="newsletter-section container"></section>
+    <section class="newsletter-section ">
+      <div class="newsletter-container container grid">
+        <h3 class="newsletter-title flex">
+          <img src="src/assets/images/icon-email.svg" alt="" class="newsletter-icon"/>
+          Sign up to Newsletter
+        </h3>
+
+        <p class="newsletter-description">
+          ...and receive Rs.100 coupon for first shopping.
+        </p>
+
+        <form action="" class="newsletter-form">
+          <input type="text" placeholder="Enter your email" class="newsletter-input">
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
     <!-- ========== End newsletter  ========== -->
 
     <!-- ========== Start Footer Section ========== -->
